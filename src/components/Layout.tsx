@@ -28,6 +28,9 @@ export const Layout: React.FC = () => {
                                 {user.role === 'coder' && (
                                     <Link to="/my-applications" className="nav-item">My Applications</Link>
                                 )}
+                                {user.role === 'admin' && (
+                                    <Link to="/applications/all" className="nav-item">All Applications</Link>
+                                )}
 
                                 <div className="user-menu">
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>

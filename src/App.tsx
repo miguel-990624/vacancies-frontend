@@ -6,6 +6,7 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { VacancyList } from './pages/VacancyList';
 import { MyApplications } from './pages/MyApplications';
+import { AllApplications } from './pages/AllApplications';
 import { SaveVacancy } from './pages/SaveVacancy';
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -22,6 +23,7 @@ const AppRoutes: React.FC = () => {
         <Route path="/" element={<VacancyList />} />
         <Route path="/vacancies/new" element={<SaveVacancy />} />
         <Route path="/vacancies/edit/:id" element={<SaveVacancy />} />
+        <Route path="/applications/all" element={<AllApplications />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route
